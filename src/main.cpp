@@ -1,8 +1,8 @@
 #include <raylib.h>
 
 int main() {
-  constexpr int screenWidth(1280);
-  constexpr int screenHeight(720);
+  constexpr int screenWidth{1280};
+  constexpr int screenHeight{720};
 
   InitWindow(screenWidth, screenHeight, "Project Bastion");
 
