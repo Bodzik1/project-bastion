@@ -1,3 +1,4 @@
+#include "Tower.h"
 #include <raylib.h>
 
 int main() {
@@ -9,9 +10,14 @@ int main() {
   SetTargetFPS(60);
 
   while (!WindowShouldClose()) {
+
+    Tower tower{{400.0f, 300.0f}};
+
     BeginDrawing();
 
     ClearBackground(RAYWHITE);
+
+    tower.Draw();
 
     EndDrawing();
   }

@@ -20,7 +20,11 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(ProjectBastion
     src/main.cpp
+    src/Tower.cpp
+    headers/Tower.h
 )
+
+target_include_directories(ProjectBastion PRIVATE headers)
 
 target_compile_features(ProjectBastion PRIVATE cxx_std_20)
 
